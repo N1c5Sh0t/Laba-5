@@ -96,7 +96,7 @@ Animal::Animal(float forage, string fortype, string forsub)
     sub_kingdom = forsub;
 }
 
-class Human :public Animal
+class Human : virtual public Animal
 {
     string snm;
 public:
@@ -131,7 +131,7 @@ Human::Human()
     delete[] argv;
 }
 
-class CyberHuman :private Human, public Animal
+class CyberHuman :virtual private Human, virtual public Animal
 {
 protected:
     int k;
@@ -178,7 +178,7 @@ CyberHuman::CyberHuman(int n)
     }
 }
 
-class CyberMayor : public Animal, private Human, private CyberHuman
+class CyberMayor : virtual public Animal, virtual private Human, private CyberHuman
 {
     string district_of_mayor;
 public:
@@ -199,7 +199,7 @@ CyberMayor::CyberMayor()
     delete[] argv;
 }
 
-class CyberEmployee : public CyberHuman, public Animal, private Human
+class CyberEmployee : public CyberHuman, virtual public Animal,virtual private Human
 {
     string name_of_firm;
     float salary;
@@ -229,9 +229,9 @@ int main()
     srand(time(0));
     setlocale(LC_ALL, "rus");
     CyberEmployee b;
-    b.Info();
     Animal c;
     c.Info();
+    b.Info();
     Human g;
     g.Info();
     CyberMayor d;
