@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5laba", "5laba\5laba.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7laba", "7laba\7laba.vcxproj", "{FF4771F1-EEC1-4AE8-8191-EF9B8D516D26}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6laba", "..\6laba\6laba\6laba.vcxproj", "{B8D4EC6C-51EA-48D7-AFA0-4D622F20E228}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6laba", "6laba\6laba.vcxproj", "{B8D4EC6C-51EA-48D7-AFA0-4D622F20E228}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
